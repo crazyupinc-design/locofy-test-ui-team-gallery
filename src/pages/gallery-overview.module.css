@@ -1,0 +1,134 @@
+.gallerySection {
+  font-size: var(--font-size-5xl);
+}
+.description,
+.gallerySection {
+  position: relative;
+  line-height: 150%;
+  display: inline-block;
+  width: 260px;
+}
+.etiamSodalesAc {
+  margin: 0;
+}
+.listItems {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+}
+.bookADemo {
+  position: relative;
+  line-height: 140%;
+  font-weight: 500;
+}
+.button {
+  background-color: var(--color-black);
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-xs) var(--padding-5xl);
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-xs);
+  color: var(--color-white);
+}
+.column,
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.content {
+  align-self: stretch;
+  gap: var(--gap-13xl);
+}
+.column {
+  width: 260px;
+}
+.imageIcon {
+  width: 292px;
+  height: 170px;
+  object-fit: cover;
+}
+.imageWrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.imageIcon1,
+.imageIcon2,
+.imageIcon3 {
+  width: 292px;
+  height: 146px;
+  object-fit: cover;
+}
+.imageIcon2,
+.imageIcon3 {
+  height: 119px;
+}
+.imageIcon3 {
+  height: 154px;
+}
+.column1 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xl);
+}
+.imageIcon5 {
+  width: 292px;
+  height: 90px;
+  object-fit: cover;
+}
+.imageWrapper5 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.imageIcon6,
+.imageIcon7 {
+  width: 292px;
+  height: 177px;
+  object-fit: cover;
+}
+.imageIcon7 {
+  height: 104px;
+}
+.smallColumns {
+  flex: 1;
+  justify-content: flex-start;
+  gap: var(--gap-21xl);
+}
+.columns,
+.galleryOverview,
+.smallColumns {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.columns {
+  width: 940px;
+  justify-content: flex-start;
+  gap: var(--gap-37xl);
+}
+.galleryOverview {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  overflow: hidden;
+  padding: var(--padding-45xl) var(--padding-5xl);
+  box-sizing: border-box;
+  justify-content: center;
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}
