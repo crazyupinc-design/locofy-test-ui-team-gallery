@@ -3,15 +3,15 @@
 }
 .description,
 .gallerySection {
+  align-self: stretch;
   position: relative;
   line-height: 150%;
-  display: inline-block;
-  width: 260px;
 }
 .etiamSodalesAc {
   margin: 0;
 }
 .listItems {
+  align-self: stretch;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -33,19 +33,13 @@
   font-size: var(--font-size-xs);
   color: var(--color-white);
 }
-.column,
 .content {
+  width: 260px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-}
-.content {
-  align-self: stretch;
   gap: var(--gap-13xl);
-}
-.column {
-  width: 260px;
 }
 .imageIcon {
   width: 292px;
@@ -73,8 +67,8 @@
 .imageIcon3 {
   height: 154px;
 }
-.column1 {
-  flex: 1;
+.column {
+  width: 292px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -103,21 +97,27 @@
   height: 104px;
 }
 .smallColumns {
-  flex: 1;
-  justify-content: flex-start;
-  gap: var(--gap-21xl);
-}
-.columns,
-.galleryOverview,
-.smallColumns {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-21xl);
+}
+.contentParent {
+  width: 940px;
+  gap: var(--gap-37xl);
+}
+.columns,
+.contentParent,
+.galleryOverview {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
 }
 .columns {
-  width: 940px;
-  justify-content: flex-start;
-  gap: var(--gap-37xl);
+  align-self: stretch;
+  width: 1392px;
 }
 .galleryOverview {
   position: relative;
@@ -126,9 +126,20 @@
   overflow: hidden;
   padding: var(--padding-45xl) var(--padding-5xl);
   box-sizing: border-box;
-  justify-content: center;
   text-align: left;
   font-size: var(--font-size-sm);
   color: var(--color-black);
   font-family: var(--font-inter);
+}
+@media screen and (max-width: 960px) {
+  .smallColumns {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 630px) {
+  .contentParent {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
 }

@@ -4,7 +4,7 @@ const GalleryOverview: FunctionComponent = () => {
   return (
     <div className={styles.galleryOverview}>
       <div className={styles.columns}>
-        <div className={styles.column}>
+        <div className={styles.contentParent}>
           <div className={styles.content}>
             <div className={styles.listItems}>
               <b className={styles.gallerySection}>Gallery Section</b>
@@ -29,36 +29,60 @@ const GalleryOverview: FunctionComponent = () => {
               <div className={styles.bookADemo}>BOOK A DEMO</div>
             </div>
           </div>
-        </div>
-        <div className={styles.smallColumns}>
-          <div className={styles.column1}>
-            <div className={styles.imageWrapper}>
-              <img className={styles.imageIcon} alt="" src="/image@2x.png" />
+          <article className={styles.smallColumns}>
+            <div className={styles.column}>
+              <div className={styles.imageWrapper}>
+                <img className={styles.imageIcon} alt="" src="/image@2x.png" />
+              </div>
+              <div className={styles.imageWrapper}>
+                <img
+                  className={styles.imageIcon1}
+                  alt=""
+                  src="/image1@2x.png"
+                />
+              </div>
+              <div className={styles.imageWrapper}>
+                <img
+                  className={styles.imageIcon2}
+                  alt=""
+                  src="/image2@2x.png"
+                />
+              </div>
+              <div className={styles.imageWrapper}>
+                <img
+                  className={styles.imageIcon3}
+                  alt=""
+                  src="/image3@2x.png"
+                />
+              </div>
             </div>
-            <div className={styles.imageWrapper}>
-              <img className={styles.imageIcon1} alt="" src="/image1@2x.png" />
+            <div className={styles.column}>
+              <div className={styles.imageWrapper}>
+                <img className={styles.imageIcon} alt="" src="/image4@2x.png" />
+              </div>
+              <div className={styles.imageWrapper5}>
+                <img
+                  className={styles.imageIcon5}
+                  alt=""
+                  src="/image5@2x.png"
+                />
+              </div>
+              <div className={styles.imageWrapper}>
+                <img
+                  className={styles.imageIcon6}
+                  alt=""
+                  src="/image6@2x.png"
+                />
+              </div>
+              <div className={styles.imageWrapper}>
+                <img
+                  className={styles.imageIcon7}
+                  alt=""
+                  src="/image7@2x.png"
+                />
+              </div>
             </div>
-            <div className={styles.imageWrapper}>
-              <img className={styles.imageIcon2} alt="" src="/image2@2x.png" />
-            </div>
-            <div className={styles.imageWrapper}>
-              <img className={styles.imageIcon3} alt="" src="/image3@2x.png" />
-            </div>
-          </div>
-          <div className={styles.column1}>
-            <div className={styles.imageWrapper}>
-              <img className={styles.imageIcon} alt="" src="/image4@2x.png" />
-            </div>
-            <div className={styles.imageWrapper5}>
-              <img className={styles.imageIcon5} alt="" src="/image5@2x.png" />
-            </div>
-            <div className={styles.imageWrapper}>
-              <img className={styles.imageIcon6} alt="" src="/image6@2x.png" />
-            </div>
-            <div className={styles.imageWrapper}>
-              <img className={styles.imageIcon7} alt="" src="/image7@2x.png" />
-            </div>
-          </div>
+          </article>
         </div>
       </div>
     </div>
